@@ -1,13 +1,7 @@
 // Importring images
-import candidate1 from "../images/prap2next_job.jpg";
-import candidate2 from "../images/candidate_2.png";
-import candidate3 from "../images/candidate3.png";
-import candidate4 from "../images/candidate4.jpg";
-import candidate5 from "../images/events-1.jpg";
-import candidate6 from "../images/events-2.jpg";
 import temp2 from "../images/group-presentation-monochromatic.png";
 import temp3 from "../images/handshake-monochromatic.png";
-import temp4 from "../images/job-interview-isometric.png";
+import temp4 from "../images/team-presentation-monochromatic-0304d.png";
 import temp from "../images/job-interview-monochromatic (1).png";
 import temp5 from "../images/career-monochromatic-70610.png";
 
@@ -106,7 +100,7 @@ const Candidates = () => {
         </div>
         <div className="card_wrapper">
           <div className="img_container">
-            <img src={temp4} alt="" style={{scale: "1.4"}}/>
+            <img src={temp4} alt=""/>
           </div>
           <div className="card_content">
             <h3>Career Decision Points</h3>
