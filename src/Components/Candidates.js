@@ -5,6 +5,19 @@ import temp4 from "../images/team-presentation-monochromatic-0304d.png";
 import temp from "../images/job-interview-monochromatic (1).png";
 import temp5 from "../images/career-monochromatic-70610.png";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "../swiper-style.css";
+
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
+
 const Candidates = () => {
   return (
     <div className="candidates_wrapper">
@@ -18,7 +31,20 @@ const Candidates = () => {
           journey.
         </div>
       </div>
-      <div className="cards_wrapper">
+     
+  <div className="testimonials_slider_wrapper cards_wrapper">
+    <Swiper
+      slidesPerView={3}
+      spaceBetween={50}
+      loop={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Pagination, Navigation]}
+      className="mySwiper"
+    >
+      <SwiperSlide>
         <div className="card_wrapper">
           <div className="img_container">
             <img src={temp} alt="" />
@@ -47,6 +73,9 @@ const Candidates = () => {
             </ul>
           </div>
         </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <div className="card_wrapper">
           <div className="img_container">
             <img src={temp2} alt="" />
@@ -71,6 +100,9 @@ const Candidates = () => {
             </ul>
           </div>
         </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <div className="card_wrapper">
           <div className="img_container">
             <img src={temp3} alt="" />
@@ -98,9 +130,12 @@ const Candidates = () => {
             </ul>
           </div>
         </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <div className="card_wrapper">
           <div className="img_container">
-            <img src={temp4} alt=""/>
+            <img src={temp4} alt="" />
           </div>
           <div className="card_content">
             <h3>Career Decision Points</h3>
@@ -121,6 +156,9 @@ const Candidates = () => {
             </ul>
           </div>
         </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <div className="card_wrapper">
           <div className="img_container">
             <img src={temp5} alt="" />
@@ -147,8 +185,14 @@ const Candidates = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </SwiperSlide>
+    </Swiper>
+
+</div>;
+
+      
     </div>
   );
 };
 export default Candidates;
+

@@ -137,14 +137,14 @@
   padding-bottom: 1rem;
 }
 
-.cards_wrapper {
+/* .cards_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 2rem;
   gap: 2rem;
-}
+} */
 
 .card_wrapper {
   cursor: pointer;
@@ -354,7 +354,7 @@ ul li {
   text-align: -webkit-center;
 }
 
-.button {
+/* .button {
   border: none;
   font-size: 16px;
   color: #fff;
@@ -364,7 +364,7 @@ ul li {
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
+} */
 
 .button:hover {
   background-color: #89119ff7;
@@ -383,6 +383,35 @@ ul li {
 .swiper-button-prev,
 .swiper-button-next {
   color: #9c27b0f7 !important;
+}
+
+.name_Lindekin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 47vw;
+  padding-bottom: 1rem;
+}
+
+.linkedin {
+  cursor: pointer;
+  background: #9C27B0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  /* text-align: center; */
+  position: relative;
+
+}
+
+.linkedin svg {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    left: 9px;
+    bottom: 0;
+    color: white;
 }
 
 /* ----------------------------NavBar Media Query------------------------------ */

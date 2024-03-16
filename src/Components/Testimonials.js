@@ -1,3 +1,6 @@
+// Icons
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import cust1 from "../images/vishal_rananaware.png";
 import cust2 from "../images/harilyer.jpeg";
 import cust3 from "../images/prakhar.png";
@@ -44,7 +47,17 @@ const Testimonials = () => {
               </div>
               <div className="card-content">
                 <div className="user-details">
-                  <h2 className="name">Vishal Rananaware</h2>
+                  <div className="name_Lindekin">
+                    <h2 className="name">Vishal Rananaware</h2>
+                    <a
+                      href="https://www.linkedin.com/in/vishal-rananaware-72720325/"
+                      target="_blank"
+                    >
+                      <div className="linkedin">
+                        <FaLinkedinIn />
+                      </div>
+                    </a>
+                  </div>
                   <h4 className="cust-details">
                     <span>Interview Preparation</span> March 3, 2023
                   </h4>
@@ -59,7 +72,6 @@ const Testimonials = () => {
                   round, I was able to successfully crack my real interview
                   which got me a new job with a generous salary increase.
                 </p>
-                <div className="button">View More</div>
               </div>
             </div>
           </SwiperSlide>
@@ -72,7 +84,22 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="card-content">
-                <h2 className="name">Hari lyer</h2>
+                <div className="user-details">
+                  <div className="name_Lindekin">
+                    <h2 className="name">Hari lyer</h2>
+                    <a
+                      href="https://www.linkedin.com/in/hari-iyer-indavenue/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                    >
+                      <div className="linkedin">
+                        <FaLinkedinIn />
+                      </div>
+                    </a>
+                  </div>
+                  <h4 className="cust-details">
+                    <span>Resume Writing</span> June 6, 2023
+                  </h4>
+                </div>
                 <p className="description">
                   I chose Sanjeev over other resume writers because of his deep
                   engineering expertise (20+ years) and his international stints
@@ -83,7 +110,6 @@ const Testimonials = () => {
                   on my strengths and areas for improvement. This session gave
                   me the confidence and focus necessary for my actual interview.
                 </p>
-                <div className="button">View More</div>
               </div>
             </div>
           </SwiperSlide>
@@ -96,7 +122,22 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="card-content">
-                <h2 className="name">Prakhar Chaturvedi</h2>
+                <div className="user-details">
+                  <div className="name_Lindekin">
+                    <h2 className="name">Prakhar Chaturvedi</h2>
+                    <a
+                      href="https://www.linkedin.com/in/prakhar-chaturvedi-a90444136/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                    >
+                      <div className="linkedin">
+                        <FaLinkedinIn />
+                      </div>
+                    </a>
+                  </div>
+                  <h4 className="cust-details">
+                    <span>Technical Training</span> March 29, 2023
+                  </h4>
+                </div>
                 <p className="description">
                   I had the pleasure of participating in a product design course
                   taught by Sanjeev. He employs the principles of Bloom's
@@ -108,7 +149,6 @@ const Testimonials = () => {
                   Screening" and "DFX". I highly recommend him as a product
                   design instructor.
                 </p>
-                <div className="button">View More</div>
               </div>
             </div>
           </SwiperSlide>
@@ -121,7 +161,21 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="card-content">
-                <h2 className="name">PRANITA MADKAIKAR (nee Naina Mankikar)</h2>
+                <div className="user-details">
+                  <div className="name_Lindekin">
+                    <h2 className="name">
+                      PRANITA MADKAIKAR (nee Naina Mankikar)
+                    </h2>
+                    <a href="https://www.linkedin.com/in/pranita-madkaikar-nee-naina-mankikar-00a87b15a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                      <div className="linkedin">
+                        <FaLinkedinIn />
+                      </div>
+                    </a>
+                  </div>
+                  <h4 className="cust-details">
+                    <span>Non-profit Consulting</span> July 14, 2023
+                  </h4>
+                </div>
                 <p className="description">
                   Our non-profit, Tara Mobile Creches Pune (TMCP) engaged
                   Sanjeev as a Pro Bono Consultant in 2022. As CEO of TMCP, I
@@ -132,7 +186,6 @@ const Testimonials = () => {
                   recommendations on effectively showcasing our 'Impact' metrics
                   improved our engagement with potential donors.
                 </p>
-                <div className="button">View More</div>
               </div>
             </div>
           </SwiperSlide>
