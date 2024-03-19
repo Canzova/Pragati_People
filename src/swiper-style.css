@@ -16,6 +16,16 @@
     flex-direction: column;
 }
 
+@media (max-width : 750px) {
+    .swiper-slide {
+      width: 90%;
+    }
+    .swiper {
+        padding: 3rem 0;
+    }
+    
+  }
+
 .swiper-slide img {
     display: block;
     width: 100%;

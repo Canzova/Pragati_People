@@ -249,6 +249,12 @@ ul li {
   padding: 2rem 5rem;
 }
 
+@media (max-width : 584px) {
+  .testimonials_slider_wrapper {
+    padding: 0;
+  }
+  
+}
 
 .slide-content {
   /* Dont give width to this */
