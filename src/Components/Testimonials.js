@@ -5,6 +5,12 @@ import cust1 from "../images/vishal_rananaware.png";
 import cust2 from "../images/harilyer.jpeg";
 import cust3 from "../images/prakhar.png";
 import cust4 from "../images/pranita.png";
+
+import img1 from "../images/Vishal Rananawre2_TR.png";
+import img3 from "../images/Prakhar_TR.png";
+import img4 from "../images/Pranita-transformed_TR.png";
+import { CiUser } from "react-icons/ci";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,7 +29,11 @@ const Testimonials = () => {
     <div className="testimonials_wrapper">
       <div className="header">
         <h1>Testimonials</h1>
-        <div>Read what our Customers say about us</div>
+        <div>
+          At Pragati People, we have many metrics to track our performance, but
+          our ultimate measure of success is the <span>JOY</span> we bring to our customers.
+          Discover what our customers say about their experiences with us.
+        </div>
       </div>
       <div className="testimonials_slider_wrapper">
         <Swiper
@@ -42,7 +52,7 @@ const Testimonials = () => {
               <div className="image-content">
                 <span className="overlay"></span>
                 <div className="card-image">
-                  <img src={cust1} alt="" className="card-img" />
+                  <img src={img1} alt="" className="card-img" />
                 </div>
               </div>
               <div className="card-content">
@@ -52,6 +62,7 @@ const Testimonials = () => {
                     <a
                       href="https://www.linkedin.com/in/vishal-rananaware-72720325/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="linkedin">
                         <FaLinkedinIn />
@@ -80,6 +91,49 @@ const Testimonials = () => {
               <div className="image-content">
                 <span className="overlay"></span>
                 <div className="card-image">
+                  {/* <img src={cust2} alt="" className="card-img" /> */}
+                  <CiUser className="card-img" />
+                </div>
+              </div>
+              <div className="card-content">
+                <div className="user-details">
+                  <div className="name_Lindekin">
+                    <h2 className="name">Sainath Shetty</h2>
+                    <a
+                      href="https://www.linkedin.com/in/sainath-shetty-8a203619/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="linkedin">
+                        <FaLinkedinIn />
+                      </div>
+                    </a>
+                  </div>
+                  <h4 className="cust-details">
+                    <span>Sainath was Sanjeev’s client</span> February 13, 2024
+                  </h4>
+                </div>
+                <p className="description">
+                  As a Talent sourcing partner, I can succinctly describe
+                  Sanjeev's work style in two words - remarkably efficient. His
+                  distinctive fusion of Engineering and HR acumen expedited our
+                  talent acquisition process. During our concise 15-minute
+                  hiring-intake call, Sanjeev skillfully grasped the
+                  expectations of our engineering teams. He personally conducted
+                  technical pre-interviews to sift through numerous profiles,
+                  presenting only the most pertinent ones to our interview
+                  panelists, thereby conserving their valuable time and effort.
+                  I wholeheartedly endorse Sanjeev to anyone seeking a recruiter
+                  who delivers with precision and speed.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="card swiper-slide">
+              <div className="image-content">
+                <span className="overlay"></span>
+                <div className="card-image">
                   <img src={cust2} alt="" className="card-img" />
                 </div>
               </div>
@@ -90,6 +144,7 @@ const Testimonials = () => {
                     <a
                       href="https://www.linkedin.com/in/hari-iyer-indavenue/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="linkedin">
                         <FaLinkedinIn />
@@ -118,7 +173,7 @@ const Testimonials = () => {
               <div className="image-content">
                 <span className="overlay"></span>
                 <div className="card-image">
-                  <img src={cust3} alt="" className="card-img" />
+                  <img src={img3} alt="" className="card-img" />
                 </div>
               </div>
               <div className="card-content">
@@ -128,6 +183,7 @@ const Testimonials = () => {
                     <a
                       href="https://www.linkedin.com/in/prakhar-chaturvedi-a90444136/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="linkedin">
                         <FaLinkedinIn />
@@ -157,7 +213,7 @@ const Testimonials = () => {
               <div className="image-content">
                 <span className="overlay"></span>
                 <div className="card-image">
-                  <img src={cust4} alt="" className="card-img" />
+                  <img src={img4} alt="" className="card-img" />
                 </div>
               </div>
               <div className="card-content">
@@ -166,7 +222,11 @@ const Testimonials = () => {
                     <h2 className="name">
                       PRANITA MADKAIKAR (nee Naina Mankikar)
                     </h2>
-                    <a href="https://www.linkedin.com/in/pranita-madkaikar-nee-naina-mankikar-00a87b15a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/pranita-madkaikar-nee-naina-mankikar-00a87b15a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="linkedin">
                         <FaLinkedinIn />
                       </div>

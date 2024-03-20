@@ -31,7 +31,7 @@ const Candidates = () => {
           journey.
         </div>
       </div>
-      <div className="testimonials_slider_wrapper cards_wrapper" >
+      <div className="testimonials_slider_wrapper cards_wrapper">
         <Swiper
           slidesPerView={3}
           spaceBetween={50}
@@ -46,7 +46,6 @@ const Candidates = () => {
             // Define breakpoints for different screen sizes
             0: {
               slidesPerView: 1, // Show 1 card per view on smaller screens
-              
             },
             865: {
               slidesPerView: 2, // Show 2 cards per view on medium-sized screens
@@ -64,23 +63,31 @@ const Candidates = () => {
               <div className="card_content">
                 <h3>Preparing for your Next Job</h3>
                 <div>
-                  While your work experience sharpens your skills in your field,
-                  getting ready for your next career move, demands an additional
-                  level of preparation. We're here to assist you in acquiring
-                  that competitive advantage through the services listed below:
+                  Getting your job application noticed is not an easy task. Gain
+                  competitive advantage by engaging Pragati for:
                 </div>
-                <ul className="overLay">
-                  <li>
-                    <span>Resume Services:</span> Get your resume critiqued or
-                    professionally written by our experts.
+                <ul className="first-overLay overLay">
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Resume writing & LinkedIn makeover Services :</div>
+                    <li className="list">
+                      Get your resume hand-crafted by our experts.
+                    </li>
+                    <li className="list">
+                      Optimize your LinkedIn profile to attract recruiters..
+                    </li>
+                    <li className="list">
+                      Get noticed by recruiters who matter.
+                    </li>
                   </li>
-                  <li>
-                    <span>Online Profiles:</span> Enhance your professional
-                    image with a sophisticated LinkedIn profile.
-                  </li>
-                  <li>
-                    <span>Ace the Interview:</span> Refine your interview
-                    proficiency with our mock interview sessions.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Interview Coaching :</div>
+                    <li className="list">
+                      Refine your interview skills with our mock interview
+                      sessions.
+                    </li>
+                    <li className="list">
+                      Our feedback helps you regain confidence.
+                    </li>
                   </li>
                 </ul>
               </div>
@@ -95,21 +102,23 @@ const Candidates = () => {
               <div className="card_content">
                 <h3>Discovering your next job</h3>
                 <div>
-                  Discovering a position where your passion, skills, and values
-                  converge is undoubtedly vital for a fulfilling career. We
-                  promise to 'hold the torch out' for you, with the below
-                  services:
+                  Finding your dream job can feel like a journey through the
+                  dark.  We hold the torch for you, with:
                 </div>
                 <ul className="overLay">
-                  <li>
-                    <span>Recruitment Consultation:</span> Browse through the
-                    current job opportunities (link) offered by our corporate
-                    clients.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Recruitment Consultation : </div>
+                    <li className="list">
+                      Explore current openings (hyperlink) from our corporate
+                      clients.
+                    </li>
                   </li>
-                  <li>
-                    <span>Advisory Services:</span> Benefit from our decades of
-                    experience to boost your chances of landing that 'dream job
-                    '.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Job Booster Package :</div>
+                    <li className="list">
+                      Leverage our expertise to improve your chances of landing
+                      that 'dream job'.
+                    </li>
                   </li>
                 </ul>
               </div>
@@ -124,23 +133,26 @@ const Candidates = () => {
               <div className="card_content">
                 <h3>Navigating job offers</h3>
                 <div>
-                  Choosing the right path is as important as arriving at the
-                  destination. We stand by your side, offering the services
-                  listed below:
+                  Once you’ve received job offer(s), choosing the right one is
+                  crucial. We help you choose the one that celebrates you.
                 </div>
                 <ul className="overLay">
-                  <li>
-                    <span>Offer Evaluation:</span> Receive support in assessing
-                    job offers.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Offer Evaluation & Comparison :</div>
+                    <li className="list">
+                      Indepth and side-by-side assessment of individual or
+                      multiple job offers.
+                    </li>
                   </li>
-                  <li>
-                    <span>Negotiation Strategies:</span>Engage with us to
-                    strategize on optimizing your offers.
-                  </li>
-                  <li>
-                    <span>Comparing Multiple Offers:</span> Receive expert
-                    guidance for a comprehensive, side-by-side evaluation of
-                    multiple offers.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Negotiation Strategies :</div>
+                    <li className="list">
+                      Let us help you identify suitable salary ranges for your
+                      skills.
+                    </li>
+                    <li className="list">
+                      Get advice on how to negotiate your salary.
+                    </li>
                   </li>
                 </ul>
               </div>
@@ -155,18 +167,23 @@ const Candidates = () => {
               <div className="card_content">
                 <h3>Career Decision Points</h3>
                 <div>
-                  Steer your career with purpose and efficiency. Seeking
-                  guidance? We're available with the services listed below:
+                  Are you at a career cross-road? Steer your career on the right
+                  path with our guidance on:
                 </div>
                 <ul className="overLay">
-                  <li>
-                    <span>Stay or Pivot:</span>Gain valuable insights to
-                    determine whether to remain in your current position or
-                    explore new opportunities.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Stay or Pivot :</div>
+                    <li className="list">
+                      We help you decide whether to remain in your current role
+                      or venture into new roles.
+                    </li>
                   </li>
-                  <li>
-                    <span>Exploring New Avenues</span>Discover the possibilities
-                    of a career change with our support.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Exploring New Avenues :</div>
+                    <li className="list">
+                      We discuss upskilling in trending fields like AI/ML, Data
+                      Science or pursuing higher degrees- MBA, MS….
+                    </li>
                   </li>
                 </ul>
               </div>
@@ -181,22 +198,22 @@ const Candidates = () => {
               <div className="card_content">
                 <h3>Crafting your Career Trajectory </h3>
                 <div>
-                  Regrettably, many individuals tend to opt for conventional
-                  career paths by default. We aim to break you out of this
-                  default mindset and assist you in gaining a deeper
-                  understanding of yourself, to construct a career where you can
-                  truly flourish. Our services are customised precisely for this
-                  purpose:
+                  To break free from a conventional career path, you need to
+                  take a long-term view. We help you gain a deeper
+                  self-understanding to hand-craft a career where you can truly
+                  flourish.
                 </div>
                 <ul className="overLay">
-                  <li>
-                    <span>Finding your IKIGAI (link):</span>Discover your
-                    purpose and passion with us.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Finding your IKIGAI (link) :</div>
+                    <li className="list">Discover your purpose and passion.</li>
                   </li>
-                  <li>
-                    <span>Creating a long-term career-arc:</span>Collaborate
-                    with us to sketch out a long-term career trajectory spanning
-                    several decades.
+                  <li style={{ padding: "0 1rem" }}>
+                    <div>Designing your career journey :</div>
+                    <li className="list">
+                      Collaborate with us to sketch out a career trajectory
+                      spanning several decades.
+                    </li>
                   </li>
                 </ul>
               </div>

@@ -126,6 +126,14 @@
   margin: 2rem;
 }
 
+.testimonials_wrapper .header span{
+  font-weight: bold;
+}
+
+.candidates_wrapper {
+  display: block;
+}
+
 .candidates_wrapper .header h1,
 .testimonials_wrapper .header h1 {
   margin-bottom: 1rem;
@@ -184,9 +192,9 @@
 }
 
 .card_wrapper div {
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .card_content div,
@@ -202,7 +210,8 @@ ul li {
   padding: 1rem;
 }
 
-.overLay li {
+.overLay li,
+.first-overLay li {
   color: white !important;
 }
 
@@ -212,7 +221,7 @@ ul li {
   overflow-y: hidden;
   position: absolute;
   top: 0;
-  padding: 5rem 1rem !important;
+  padding: 4rem 1rem !important;
   text-align: left;
   font-size: 1.2rem;
   background-color: #9c27b0f7;
@@ -221,25 +230,93 @@ ul li {
   list-style: none;
   width: 100%;
   height: 0;
-
   border-radius: 2rem;
-
   /* transform: translateY(100%); */
 }
 
-.overLay li {
-  margin-bottom: 2rem;
+.first-overLay {
+  opacity: 0;
+  transition: all .3s ease;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  font-size: 1.2rem;
+  background-color: #9c27b0f7;
+  bottom: 0;
+  left: 0;
+  list-style: none;
+  width: 100%;
+  height: 0;
+  border-radius: 2rem;
+  padding: 1rem 1rem !important;
+}
+
+.overLay li,
+.first-overLay li {
+  margin-bottom: 1rem;
   font-weight: 300;
 }
 
-.card_wrapper:hover .overLay {
+.overLay div,
+.first-overLay div {
+  margin: 1rem 0;
+}
+
+.card_wrapper:hover .overLay,
+.card_wrapper:hover .first-overLay {
   /* transform: translateY(0); */
   height: 100%;
   opacity: 1;
 }
 
-.overLay li span {
+.overLay li div,
+.first-overLay li div {
   font-weight: 700;
+  color: white;
+  margin-bottom: 1rem !important;
+}
+
+.list {
+  list-style-type: disc;
+}
+
+/* ------------------------------------Candidates Phone--------------------------------- */
+
+.phone_cards_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.candidates_phone_wrapper {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .candidates_phone_wrapper {
+    display: block !important;
+  }
+
+  .candidates_wrapper {
+    display: none;
+  }
+
+  .card_wrapper {
+    height: 30rem;
+  }
+
+  .first-overLay {
+    padding: 3rem 1rem !important;
+  }
+
+  .overLay {
+    padding: 6rem 1rem !important;
+  }
+
 }
 
 /* -----------------------------------Testimonials----------------------------------- */
@@ -253,7 +330,7 @@ ul li {
   .testimonials_slider_wrapper {
     padding: 0;
   }
-  
+
 }
 
 .slide-content {
@@ -411,13 +488,13 @@ ul li {
 }
 
 .linkedin svg {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 7px;
-    right: 0;
-    left: 9px;
-    bottom: 0;
-    color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  left: 9px;
+  bottom: 0;
+  color: white;
 }
 
 /* ----------------------------NavBar Media Query------------------------------ */
