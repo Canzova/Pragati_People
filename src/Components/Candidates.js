@@ -5,6 +5,8 @@ import temp4 from "../images/team-presentation-monochromatic-0304d.png";
 import temp from "../images/job-interview-monochromatic (1).png";
 import temp5 from "../images/career-monochromatic-70610.png";
 
+import { RxCross2 } from "react-icons/rx";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,6 +21,37 @@ import "../swiper-style.css";
 import { Pagination, Navigation } from "swiper/modules";
 
 const Candidates = () => {
+
+  const handleOnClick = (index) => {
+    // Get all elements with the class "overLay"
+    const overLays = document.getElementsByClassName("overLay");
+
+    // Loop through each element and modify its style
+    for (let i = 0; i < overLays.length; i++) {
+      if (i === index) {
+        // Set height to 100%
+        overLays[i].style.height = "100%";
+        // Set opacity to 1
+        overLays[i].style.opacity = "1";
+      }
+    }
+  };
+
+  const handleCrossClick = (index)=>{
+     // Get all elements with the class "overLay"
+     const overLays = document.getElementsByClassName("overLay");
+
+     // Loop through each element and modify its style
+     for (let i = 0; i < overLays.length; i++) {
+       if (i === index) {
+         // Set height to 100%
+         overLays[i].style.height = "0";
+         // Set opacity to 1
+         overLays[i].style.opacity = "0";
+       }
+     }
+  }
+
   return (
     <div className="candidates_wrapper">
       <div className="header">
@@ -62,11 +95,18 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Preparing for your Next Job</h3>
-                <div>
+                <div className="card_txt">
                   Getting your job application noticed is not an easy task. Gain
                   competitive advantage by engaging Pragati for:
                 </div>
+                <button
+                  className="btn_primary"
+                  onClick={() => handleOnClick(0)}
+                >
+                  Read More
+                </button>
                 <ul className="first-overLay overLay">
+                  <RxCross2 className="cross-logo"onClick={()=>handleCrossClick(0)}/>
                   <li style={{ padding: "0 1rem" }}>
                     <div>Resume writing & LinkedIn makeover Services :</div>
                     <li className="list">
@@ -101,11 +141,18 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Discovering your next job</h3>
-                <div>
+                <div className="card_txt">
                   Finding your dream job can feel like a journey through the
                   dark.  We hold the torch for you, with:
                 </div>
+                <button
+                  className="btn_primary"
+                  onClick={() => handleOnClick(1)}
+                >
+                  Read More
+                </button>
                 <ul className="overLay">
+                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(1)}/>
                   <li style={{ padding: "0 1rem" }}>
                     <div>Recruitment Consultation : </div>
                     <li className="list">
@@ -132,11 +179,18 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Navigating job offers</h3>
-                <div>
+                <div className="card_txt">
                   Once you’ve received job offer(s), choosing the right one is
                   crucial. We help you choose the one that celebrates you.
                 </div>
+                <button
+                  className="btn_primary"
+                  onClick={() => handleOnClick(2)}
+                >
+                  Read More
+                </button>
                 <ul className="overLay">
+                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(2)}/>
                   <li style={{ padding: "0 1rem" }}>
                     <div>Offer Evaluation & Comparison :</div>
                     <li className="list">
@@ -166,11 +220,18 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Career Decision Points</h3>
-                <div>
+                <div className="card_txt">
                   Are you at a career cross-road? Steer your career on the right
                   path with our guidance on:
                 </div>
+                <button
+                  className="btn_primary"
+                  onClick={() => handleOnClick(3)}
+                >
+                  Read More
+                </button>
                 <ul className="overLay">
+                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(3)}/>
                   <li style={{ padding: "0 1rem" }}>
                     <div>Stay or Pivot :</div>
                     <li className="list">
@@ -197,13 +258,20 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Crafting your Career Trajectory </h3>
-                <div>
+                <div className="card_txt">
                   To break free from a conventional career path, you need to
                   take a long-term view. We help you gain a deeper
                   self-understanding to hand-craft a career where you can truly
                   flourish.
                 </div>
+                <button
+                  className="btn_primary"
+                  onClick={() => handleOnClick(4)}
+                >
+                  Read More
+                </button>
                 <ul className="overLay">
+                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(4)}/>
                   <li style={{ padding: "0 1rem" }}>
                     <div>Finding your IKIGAI (link) :</div>
                     <li className="list">Discover your purpose and passion.</li>
