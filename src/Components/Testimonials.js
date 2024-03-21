@@ -33,16 +33,16 @@ const Testimonials = () => {
           <span className="first_alpha">A</span>t Pragati People, we have many
           metrics to track our performance, but our ultimate measure of success
           is the <span className="joy">JOY</span> we bring to our customers.
-          <div>
+        </div>
+        <div>
             Discover what our customers say about their experiences with us.
           </div>
-        </div>
       </div>
       <div className="testimonials_slider_wrapper">
         <Swiper
           slidesPerView={1}
           spaceBetween={50}
-          loop={true}
+          loop={false}
           pagination={{
             clickable: true,
           }}

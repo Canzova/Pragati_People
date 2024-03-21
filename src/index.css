@@ -80,6 +80,7 @@
   transform: translateX(-100%);
   transition: all 0.5s ease-in-out;
   display: none;
+  z-index: 1000;
 }
 
 .MobileNavBar_logo {
@@ -126,17 +127,32 @@
 /* -----------------------------------Candidates--------------------------------------- */
 .candidates_wrapper .header,
 .testimonials_wrapper .header {
-  background-color: #4D2A7C;
-  color: white;
+  /* background-color: #4D2A7C; */
+  color: black;
   /* height: 13rem; */
   text-align: center;
-  padding: 2rem;
-  /* box-shadow: inset -2px -1px 0px 20px rgba(0, 0, 0, 0.2); */
+  padding: 1rem;
+  box-shadow: #4D2A7C;
   margin: 2rem;
+  border: 1.5rem solid #4D2A7C;
+}
+
+.candidates_wrapper .header div .first_alpha,
+.testimonials_wrapper .header div .first_alpha {
+  font-size: 2rem;
+  color: #4D2A7C;
+}
+
+.candidates_wrapper .header div .career-pragati,
+.testimonials_wrapper .header div .career-pragati {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4D2A7C;
 }
 
 .testimonials_wrapper .header .joy {
   font-weight: bold;
+  color: #4D2A7C;
 }
 
 .candidates_wrapper {
@@ -145,6 +161,7 @@
 
 .candidates_wrapper .header h1,
 .testimonials_wrapper .header h1 {
+  color: #4D2A7C;
   margin-bottom: 1rem;
 }
 
@@ -339,7 +356,7 @@ ul li {
   /* For Swriper arrow buttons */
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after {
-    margin-left: 1rem !important;
+    margin-left: 1.5rem !important;
   }
 
   .swiper-button-prev:after,
@@ -349,7 +366,7 @@ ul li {
 
   .swiper-button-prev:after,
   .swiper-rtl .swiper-button-prev:after {
-    margin-right: 1rem !important;
+    margin-right: 1.5rem !important;
   }
 
 }
@@ -558,6 +575,30 @@ ul li {
   color: white;
 }
 
+/* -----------------------------------------Footer----------------------------------------------- */
+.footer_wrapper {
+  height: 5rem;
+  width: 100%;
+  background-color: #4D2A7C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 28rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7rem;
+}
+
+.contact_us {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 /* ----------------------------NavBar Media Query------------------------------ */
 
 @media (max-width:1025px) {
@@ -586,6 +627,12 @@ ul li {
   .MobileNavBar-Wrapper {
     display: block;
   }
+
+  .footer_wrapper {
+    padding: 5rem 13rem;
+  }
+
+
 
   /* .nav_logo h1 {
     display: none;
@@ -621,6 +668,7 @@ ul li {
     color: black;
     padding: 0;
     margin: 0;
+    border: none;
   }
 
   .candidates_wrapper .header h1,
@@ -647,5 +695,8 @@ ul li {
     font-size: 2rem;
   }
 
+  .footer_wrapper {
+    padding: 5rem 1rem;
+  }
 
 }

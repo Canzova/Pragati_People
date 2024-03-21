@@ -6,6 +6,7 @@ import MobileNavBar from "./Components/MobileNavBar";
 import Candidates from "./Components/Candidates";
 import Testimonials from "./Components/Testimonials";
 import CandidatesPhone from "./Components/CandidatesPhone";
+import Footer from "./Components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <NavBar />
     <MobileNavBar />
     <Candidates />
-    <Testimonials />
+    {/* <Testimonials /> */}
+    <Footer/>
   </React.StrictMode>
 );
