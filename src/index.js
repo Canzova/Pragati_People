@@ -13,6 +13,6 @@ root.render(
     <NavBar />
     <MobileNavBar />
     <Candidates />
-    {/* <Testimonials /> */}
+    <Testimonials />
   </React.StrictMode>
 );

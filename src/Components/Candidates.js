@@ -21,46 +21,36 @@ import "../swiper-style.css";
 import { Pagination, Navigation } from "swiper/modules";
 
 const Candidates = () => {
-
   const handleOnClick = (index) => {
     // Get all elements with the class "overLay"
     const overLays = document.getElementsByClassName("overLay");
 
-    // Loop through each element and modify its style
-    for (let i = 0; i < overLays.length; i++) {
-      if (i === index) {
-        // Set height to 100%
-        overLays[i].style.height = "100%";
-        // Set opacity to 1
-        overLays[i].style.opacity = "1";
-      }
-    }
+    // Set height to 100%
+    overLays[index].style.height = "100%";
+    // Set opacity to 1
+    overLays[index].style.opacity = "1";
   };
 
-  const handleCrossClick = (index)=>{
-     // Get all elements with the class "overLay"
-     const overLays = document.getElementsByClassName("overLay");
+  const handleCrossClick = (index) => {
+    // Get all elements with the class "overLay"
+    const overLays = document.getElementsByClassName("overLay");
 
-     // Loop through each element and modify its style
-     for (let i = 0; i < overLays.length; i++) {
-       if (i === index) {
-         // Set height to 100%
-         overLays[i].style.height = "0";
-         // Set opacity to 1
-         overLays[i].style.opacity = "0";
-       }
-     }
-  }
+    overLays[index].style.height = "0";
+    // Set opacity to 1
+    overLays[index].style.opacity = "0";
+  };
 
   return (
     <div className="candidates_wrapper">
       <div className="header">
-        <h1>Candidates</h1>
+        <h1>Professionals</h1>
         <div>
-          Your drive, aspirations, expertise and talents make your career
-          journey truly unique. We're committed to standing by your side every
-          step of the way! Each of our 'career pragati' services listed below
-          will be carefully tailored to guide you, from wherever you are in your
+          <span className="first_alpha">Y</span>our drive, aspirations,
+          expertise and talents make your career journey truly unique.
+        </div>
+        <div>
+          Wherever you are in your own journey, we will meet you there with our{" "}
+          <span className="career-pragati">‘career pragati'</span> services.
           journey.
         </div>
       </div>
@@ -68,7 +58,7 @@ const Candidates = () => {
         <Swiper
           slidesPerView={3}
           spaceBetween={50}
-          loop={true}
+          loop={false}
           pagination={{
             clickable: true,
           }}
@@ -99,14 +89,22 @@ const Candidates = () => {
                   Getting your job application noticed is not an easy task. Gain
                   competitive advantage by engaging Pragati for:
                 </div>
-                <button
-                  className="btn_primary"
-                  onClick={() => handleOnClick(0)}
+                <div
+                  className="btn_wrapper
+                "
                 >
-                  Read More
-                </button>
+                  <button
+                    className="btn_primary"
+                    onClick={() => handleOnClick(0)}
+                  >
+                    Read More
+                  </button>
+                </div>
                 <ul className="first-overLay overLay">
-                  <RxCross2 className="cross-logo"onClick={()=>handleCrossClick(0)}/>
+                  <RxCross2
+                    className="cross-logo"
+                    onClick={() => handleCrossClick(0)}
+                  />
                   <li style={{ padding: "0 1rem" }}>
                     <div>Resume writing & LinkedIn makeover Services :</div>
                     <li className="list">
@@ -145,14 +143,22 @@ const Candidates = () => {
                   Finding your dream job can feel like a journey through the
                   dark.  We hold the torch for you, with:
                 </div>
-                <button
-                  className="btn_primary"
-                  onClick={() => handleOnClick(1)}
+                <div
+                  className="btn_wrapper
+                "
                 >
-                  Read More
-                </button>
+                  <button
+                    className="btn_primary"
+                    onClick={() => handleOnClick(1)}
+                  >
+                    Read More
+                  </button>
+                </div>
                 <ul className="overLay">
-                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(1)}/>
+                  <RxCross2
+                    className="cross-logo"
+                    onClick={() => handleCrossClick(1)}
+                  />
                   <li style={{ padding: "0 1rem" }}>
                     <div>Recruitment Consultation : </div>
                     <li className="list">
@@ -183,14 +189,22 @@ const Candidates = () => {
                   Once you’ve received job offer(s), choosing the right one is
                   crucial. We help you choose the one that celebrates you.
                 </div>
-                <button
-                  className="btn_primary"
-                  onClick={() => handleOnClick(2)}
+                <div
+                  className="btn_wrapper
+                "
                 >
-                  Read More
-                </button>
+                  <button
+                    className="btn_primary"
+                    onClick={() => handleOnClick(2)}
+                  >
+                    Read More
+                  </button>
+                </div>
                 <ul className="overLay">
-                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(2)}/>
+                  <RxCross2
+                    className="cross-logo"
+                    onClick={() => handleCrossClick(2)}
+                  />
                   <li style={{ padding: "0 1rem" }}>
                     <div>Offer Evaluation & Comparison :</div>
                     <li className="list">
@@ -224,14 +238,22 @@ const Candidates = () => {
                   Are you at a career cross-road? Steer your career on the right
                   path with our guidance on:
                 </div>
-                <button
-                  className="btn_primary"
-                  onClick={() => handleOnClick(3)}
+                <div
+                  className="btn_wrapper
+                "
                 >
-                  Read More
-                </button>
+                  <button
+                    className="btn_primary"
+                    onClick={() => handleOnClick(3)}
+                  >
+                    Read More
+                  </button>
+                </div>
                 <ul className="overLay">
-                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(3)}/>
+                  <RxCross2
+                    className="cross-logo"
+                    onClick={() => handleCrossClick(3)}
+                  />
                   <li style={{ padding: "0 1rem" }}>
                     <div>Stay or Pivot :</div>
                     <li className="list">
@@ -264,14 +286,22 @@ const Candidates = () => {
                   self-understanding to hand-craft a career where you can truly
                   flourish.
                 </div>
-                <button
-                  className="btn_primary"
-                  onClick={() => handleOnClick(4)}
+                <div
+                  className="btn_wrapper
+                "
                 >
-                  Read More
-                </button>
+                  <button
+                    className="btn_primary"
+                    onClick={() => handleOnClick(4)}
+                  >
+                    Read More
+                  </button>
+                </div>
                 <ul className="overLay">
-                <RxCross2 className="cross-logo" onClick={()=>handleCrossClick(4)}/>
+                  <RxCross2
+                    className="cross-logo"
+                    onClick={() => handleCrossClick(4)}
+                  />
                   <li style={{ padding: "0 1rem" }}>
                     <div>Finding your IKIGAI (link) :</div>
                     <li className="list">Discover your purpose and passion.</li>

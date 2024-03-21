@@ -30,9 +30,12 @@ const Testimonials = () => {
       <div className="header">
         <h1>Testimonials</h1>
         <div>
-          At Pragati People, we have many metrics to track our performance, but
-          our ultimate measure of success is the <span>JOY</span> we bring to our customers.
-          Discover what our customers say about their experiences with us.
+          <span className="first_alpha">A</span>t Pragati People, we have many
+          metrics to track our performance, but our ultimate measure of success
+          is the <span className="joy">JOY</span> we bring to our customers.
+          <div>
+            Discover what our customers say about their experiences with us.
+          </div>
         </div>
       </div>
       <div className="testimonials_slider_wrapper">

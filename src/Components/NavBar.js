@@ -1,4 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
+import logo from "../images/logo.png"
 const NavBar = () => {
   const handleOnclick = () => {
     //const hamburger = document.querySelector('.hamburger');
@@ -8,6 +9,7 @@ const NavBar = () => {
   return (
     <div className="Nav-Wrapper">
       <div className="nav_logo">
+        <img src={logo} alt="logo" />
         <h1>PRAGATI &nbsp;PEOPLE</h1>
       </div>
       <div className="nav_links">

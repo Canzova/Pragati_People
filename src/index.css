@@ -23,7 +23,14 @@
 }
 
 .nav_logo {
-  color: #9C27B0;
+  color: #4D2A7C;
+  display: flex;
+  align-items: center;
+}
+
+.nav_logo h1 {
+  margin-left: 1rem;
+  font-size: 1.7rem;
 }
 
 .nav_links_list {
@@ -40,7 +47,7 @@
 }
 
 .nav_links_list a li:hover {
-  color: #9C27B0;
+  color: #4D2A7C;
 }
 
 .nav_links_list a li {
@@ -53,7 +60,7 @@
 .btn_primary {
   color: white !important;
   padding: 0.5rem 1rem;
-  background-color: #9C27B0;
+  background-color: #4D2A7C;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
@@ -69,7 +76,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 60%;
+  height: 100%;
   transform: translateX(-100%);
   transition: all 0.5s ease-in-out;
   display: none;
@@ -81,7 +88,7 @@
   align-items: center;
   padding: 1rem;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.5);
-  color: #9C27B0;
+  color: #4D2A7C;
 }
 
 .cross-logo {
@@ -119,7 +126,7 @@
 /* -----------------------------------Candidates--------------------------------------- */
 .candidates_wrapper .header,
 .testimonials_wrapper .header {
-  background-color: #9C27B0;
+  background-color: #4D2A7C;
   color: white;
   /* height: 13rem; */
   text-align: center;
@@ -128,7 +135,7 @@
   margin: 2rem;
 }
 
-.testimonials_wrapper .header span {
+.testimonials_wrapper .header .joy {
   font-weight: bold;
 }
 
@@ -167,6 +174,7 @@
   border: 1px solid #e0e0e0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #f5f5f5;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -184,7 +192,7 @@
 .card_wrapper h3 {
 
   text-align: center;
-  color: #9C27B0;
+  color: #4D2A7C;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -228,10 +236,10 @@ ul li {
   overflow-y: hidden;
   position: absolute;
   top: 0;
-  padding: 4rem 1rem !important;
+  padding: 2rem 1rem !important;
   text-align: left;
   font-size: 1.2rem;
-  background-color: #9c27b0f7;
+  background-color: #4D2A7C;
   bottom: 0;
   left: 0;
   list-style: none;
@@ -249,20 +257,27 @@ ul li {
   top: 0;
   text-align: left;
   font-size: 1.2rem;
-  background-color: #9c27b0f7;
+  background-color: #4D2A7C;
   bottom: 0;
   left: 0;
   list-style: none;
   width: 100%;
   height: 0;
   border-radius: 2rem;
-  padding: 1rem 1rem !important;
+  padding: 0rem 0.5rem !important;
 }
 
-.overLay li,
+
+.overLay li {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
 .first-overLay li {
   margin-bottom: 1rem;
   font-weight: 300;
+  font-size: 1.1rem;
 }
 
 .overLay div,
@@ -276,22 +291,67 @@ ul li {
   opacity: 1;
 } */
 
-.overLay li div,
+.overLay li div {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem !important;
+  font-size: 1.2rem;
+}
+
 .first-overLay li div {
   font-weight: 700;
   color: white;
   margin-bottom: 1rem !important;
+  font-size: 1.1rem;
 }
 
 .list {
   list-style-type: disc;
 }
 
-.overLay .cross-logo{
+.overLay .cross-logo {
   color: white;
   position: absolute;
   right: 1rem;
   top: 2rem;
+}
+
+/* ---------------------------------Candidates Media Query-------------------------- */
+@media (max-width: 600px) {
+  .btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card_wrapper {
+    height: 25rem;
+  }
+
+  .overLay {
+    padding: 2rem 1rem !important;
+  }
+
+  .first-overLay {
+    padding: 0rem 0.5rem !important;
+  }
+
+  /* For Swriper arrow buttons */
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    margin-left: 1rem !important;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 1.9rem !important;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-prev:after {
+    margin-right: 1rem !important;
+  }
+
 }
 
 /* ------------------------------------Candidates Phone--------------------------------- */
@@ -305,6 +365,7 @@ ul li {
   gap: 2rem;
 }
 
+
 .candidates_phone_wrapper {
   display: none;
 }
@@ -315,17 +376,7 @@ ul li {
   }
 
 
-  .card_wrapper {
-    height: 28rem;
-  }
 
-  .overLay {
-    padding: 6rem 1rem !important;
-  }
-
-  .first-overLay {
-    padding: 3rem 1rem !important;
-  }
 
 }
 
@@ -361,7 +412,7 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .image-content {
@@ -381,7 +432,7 @@ ul li {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #9c27b0f7;
+  background-color: #4D2A7C;
   border-radius: 25px 25px 0 25px;
 }
 
@@ -393,7 +444,7 @@ ul li {
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #9c27b0f7;
+  background-color: #4D2A7C;
 }
 
 .overlay::after {
@@ -415,13 +466,13 @@ ul li {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #9c27b0f7;
+  border: 4px solid #4D2A7C;
 }
 
 
 .name {
   text-align: center;
-  color: #9C27B0;
+  color: #4D2A7C;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -431,7 +482,7 @@ ul li {
 }
 
 .cust-details {
-  color: #9C27B0;
+  color: #4D2A7C;
   font-weight: 100;
   font-size: 1rem;
   padding-bottom: 1rem;
@@ -443,7 +494,7 @@ ul li {
 
 .description {
   font-feature-settings: 14px;
-  color: #707070;
+  color: black;
   text-align: -webkit-center;
 }
 
@@ -452,7 +503,7 @@ ul li {
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
-  background-color: #9c27b0f7;
+  background-color: #4D2A7C;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -465,17 +516,17 @@ ul li {
 }
 
 .swiper-pagination-bullet {
-  background-color: #9c27b0f7 !important;
+  background-color: #4D2A7C !important;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #9c27b0f7 !important;
+  background-color: #4D2A7C !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #9c27b0f7 !important;
+  color: #4D2A7C !important;
 }
 
 .name_Lindekin {
@@ -488,7 +539,7 @@ ul li {
 
 .linkedin {
   cursor: pointer;
-  background: #9C27B0;
+  background: #4D2A7C;
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
@@ -510,8 +561,12 @@ ul li {
 /* ----------------------------NavBar Media Query------------------------------ */
 
 @media (max-width:1025px) {
-  .Nav-Wrapper {
+  /* .Nav-Wrapper {
     box-shadow: none;
+  } */
+
+  .Nav-Wrapper {
+    margin: 1rem 0;
   }
 
   .cross-logo {
@@ -532,14 +587,14 @@ ul li {
     display: block;
   }
 
-  .nav_logo h1 {
+  /* .nav_logo h1 {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 576px) {
   .Nav-Wrapper {
-    box-shadow: none;
+    margin: 1rem 0;
   }
 
   .nav_links_list {
@@ -548,7 +603,7 @@ ul li {
 
   .hamburger {
     display: block;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .MobileNavBar-Wrapper {
@@ -556,6 +611,41 @@ ul li {
   }
 
   .nav_logo h1 {
-    display: none;
+    font-size: 1.3rem;
+    margin-left: 0;
   }
+
+  .candidates_wrapper .header,
+  .testimonials_wrapper .header {
+    background: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+  }
+
+  .candidates_wrapper .header h1,
+  .testimonials_wrapper .header h1 {
+    color: white;
+    background-color: #4D2A7C;
+    height: 4rem;
+    padding: 1rem 0;
+  }
+
+  .candidates_wrapper .header div,
+  .testimonials_wrapper .header div {
+    padding: 1rem;
+  }
+
+  .candidates_wrapper .header div .career-pragati,
+  .testimonials_wrapper .header div .career-pragati {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .candidates_wrapper .header div .first_alpha,
+  .testimonials_wrapper .header div .first_alpha {
+    font-size: 2rem;
+  }
+
+
 }
