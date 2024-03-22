@@ -134,7 +134,7 @@
   padding: 1rem;
   box-shadow: #4D2A7C;
   margin: 2rem;
-  border: 1.5rem solid #4D2A7C;
+  /* border: 1.5rem solid #4D2A7C; */
 }
 
 .candidates_wrapper .header div .first_alpha,
@@ -161,8 +161,11 @@
 
 .candidates_wrapper .header h1,
 .testimonials_wrapper .header h1 {
-  color: #4D2A7C;
+  color: white;
   margin-bottom: 1rem;
+  background: #4D2A7C;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .candidates_wrapper .header div,
@@ -333,13 +336,15 @@ ul li {
   top: 2rem;
 }
 
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* ---------------------------------Candidates Media Query-------------------------- */
 @media (max-width: 600px) {
-  .btn_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .card_wrapper {
     height: 25rem;
@@ -599,6 +604,20 @@ ul li {
   font-size: 2rem;
 }
 
+
+@media (max-width : 1208px) {
+  .footer_wrapper {
+    padding: 5rem 13rem;
+  }
+
+}
+
+@media (max-width : 680px) {
+  .footer_wrapper {
+    padding: 5rem 10rem;
+  }
+}
+
 /* ----------------------------NavBar Media Query------------------------------ */
 
 @media (max-width:1025px) {
@@ -628,18 +647,13 @@ ul li {
     display: block;
   }
 
-  .footer_wrapper {
-    padding: 5rem 13rem;
-  }
-
-
 
   /* .nav_logo h1 {
     display: none;
   } */
 }
 
-@media (max-width: 576px) {
+@media (max-width: 708px) {
   .Nav-Wrapper {
     margin: 1rem 0;
   }
@@ -668,6 +682,7 @@ ul li {
     color: black;
     padding: 0;
     margin: 0;
+    padding: 1rem;
     border: none;
   }
 

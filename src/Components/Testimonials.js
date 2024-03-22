@@ -113,7 +113,7 @@ const Testimonials = () => {
                     </a>
                   </div>
                   <h4 className="cust-details">
-                    <span>Sainath was Sanjeev’s client</span> February 13, 2024
+                    <span>Head Hunting</span> February 13, 2024
                   </h4>
                 </div>
                 <p className="description">
