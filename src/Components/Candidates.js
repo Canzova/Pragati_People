@@ -50,7 +50,7 @@ const Candidates = () => {
         </div>
         <div>
           Wherever you are in your own journey, we will meet you there with our{" "}
-          <span className="career-pragati">‘career pragati'</span> services.
+          <span className="career-pragati">career pragati</span> services.
           journey.
         </div>
       </div>

@@ -1,6 +1,6 @@
 // Icons
 import { FaLinkedinIn } from "react-icons/fa6";
-
+import { FaQuoteLeft } from "react-icons/fa";
 import cust1 from "../images/vishal_rananaware.png";
 import cust2 from "../images/harilyer.jpeg";
 import cust3 from "../images/prakhar.png";

@@ -3,10 +3,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 
 }
-
+s
+:root {
+  --heading-font: "Tenor Sans", sans-serif;
+  --para-font: "Archivo Narrow", sans-serif;
+}
 
 
 
@@ -26,14 +30,17 @@
   color: #4D2A7C;
   display: flex;
   align-items: center;
+  font-family: var(--heading-font);
 }
 
 .nav_logo h1 {
   margin-left: 1rem;
   font-size: 1.7rem;
+  font-family: var(--heading-font);
 }
 
 .nav_links_list {
+  font-family: var(--para-font);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +140,7 @@
   text-align: center;
   padding: 1rem;
   box-shadow: #4D2A7C;
-  margin: 2rem;
+  margin: 0 2rem;
   /* border: 1.5rem solid #4D2A7C; */
 }
 
@@ -148,6 +155,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #4D2A7C;
+  font-family: var(--para-font);
 }
 
 .testimonials_wrapper .header .joy {
@@ -166,10 +174,12 @@
   background: #4D2A7C;
   padding: 1rem;
   border-radius: 1rem;
+  font-family: var(--heading-font);
 }
 
 .candidates_wrapper .header div,
 .testimonials_wrapper .header div {
+  font-family: var(--para-font);
   font-size: 1.4rem;
   padding-bottom: 1rem;
 }
@@ -213,7 +223,7 @@
 
   text-align: center;
   color: #4D2A7C;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--heading-font);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.2;
@@ -230,7 +240,7 @@
 
 .card_content div,
 ul li {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--para-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
@@ -292,17 +302,20 @@ ul li {
   margin-bottom: 1rem;
   font-weight: 300;
   font-size: 1.2rem;
+  font-family: var(--para-font);
 }
 
 .first-overLay li {
   margin-bottom: 1rem;
   font-weight: 300;
   font-size: 1.1rem;
+  font-family: var(--para-font);
 }
 
 .overLay div,
 .first-overLay div {
   margin: 1rem 0;
+  
 }
 
 /* .card_wrapper:hover .overLay,
@@ -316,6 +329,7 @@ ul li {
   color: white;
   margin-bottom: 1rem !important;
   font-size: 1.2rem;
+  font-family: var(--para-font);
 }
 
 .first-overLay li div {
@@ -495,7 +509,7 @@ ul li {
 .name {
   text-align: center;
   color: #4D2A7C;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--para-font);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.2;
@@ -515,9 +529,30 @@ ul li {
 }
 
 .description {
+  font-family: var(--para-font);
   font-feature-settings: 14px;
   color: black;
-  text-align: -webkit-center;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+
+.description::before {
+  position: absolute;
+  font-family: 'Font Awesome 6 Free';
+  content: "\f10d";
+  font-weight: bold;
+  top: -0.5rem;
+  left: -1rem;
+  color: #4D2A7C;
+}
+
+.description::after {
+  position: absolute;
+  font-family: 'Font Awesome 6 Free';
+  content: "\f10e";
+  font-weight: bold;
+  color: #4D2A7C;
 }
 
 /* .button {
@@ -580,6 +615,22 @@ ul li {
   color: white;
 }
 
+.left_quote {
+  position: absolute;
+  top: -0.5rem;
+  left: -1.5rem;
+
+  font-size: 1rem;
+  color: #4D2A7C;
+}
+
+.right_quote {
+  position: absolute;
+  font-size: 1rem;
+  right: 19.1rem;
+  color: #4D2A7C;
+}
+
 /* -----------------------------------------Footer----------------------------------------------- */
 .footer_wrapper {
   height: 5rem;
@@ -602,6 +653,7 @@ ul li {
   color: white;
   font-weight: bold;
   font-size: 2rem;
+  font-family: var(--heading-font);
 }
 
 
