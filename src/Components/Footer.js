@@ -6,24 +6,24 @@ const Footer = () => {
     <div className="footer_wrapper">
       <div className="contact_us">Contact Us</div>
       <div className="logos">
-        <div className="linkedin" style={{ background: "white" }}>
+        <div className="linkedin" style={{ background: "#4D2A7C" }}>
           <a
             href="https://www.linkedin.com/in/sanjeev-nichani-684358a/"
             target="_blank"
           >
-            <FaLinkedinIn style={{ color: "#4D2A7C" }} />
+            <FaLinkedinIn style={{ color: "white" }} />
           </a>
         </div>
         <div
           className="linkedin"
           style={{
-            background: "white",
+            background: "#4D2A7C",
           }}
         >
           <a href="mailto:open.pragati@gmail.com" target="_blank">
             <IoMdMail
               style={{
-                color: "#4D2A7C",
+                color: "white",
                 position: "absolute",
                 left: "19%",
                 top: "22%",

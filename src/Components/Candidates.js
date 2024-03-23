@@ -50,7 +50,7 @@ const Candidates = () => {
         </div>
         <div>
           Wherever you are in your own journey, we will meet you there with our{" "}
-          <span className="career-pragati">career pragati</span> services.
+          <span className="career-pragati">career pragati</span> services
           journey.
         </div>
       </div>
@@ -85,9 +85,13 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Preparing for your Next Job</h3>
-                <div className="card_txt">
-                  Getting your job application noticed is not an easy task. Gain
-                  competitive advantage by engaging Pragati for:
+                <div className="card_txt_wrapper">
+                  <div className="card_txt">
+                    Getting your job application noticed is not an easy task.
+                  </div>
+                  <div className="card_txt">
+                    Gain competitive advantage by engaging Pragati.
+                  </div>
                 </div>
                 <div
                   className="btn_wrapper
@@ -100,31 +104,29 @@ const Candidates = () => {
                     Read More
                   </button>
                 </div>
-                <ul className="first-overLay overLay">
+                <ul className="overLay">
                   <RxCross2
                     className="cross-logo"
                     onClick={() => handleCrossClick(0)}
                   />
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Resume writing & LinkedIn makeover Services :</div>
+                    <div>Resume writing & LinkedIn makeover Services</div>
                     <li className="list">
                       Get your resume hand-crafted by our experts.
                     </li>
                     <li className="list">
-                      Optimize your LinkedIn profile to attract recruiters..
-                    </li>
-                    <li className="list">
-                      Get noticed by recruiters who matter.
+                      Optimize your LinkedIn profile to attract recruiters.
                     </li>
                   </li>
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Interview Coaching :</div>
+                    <div>Interview Coaching</div>
                     <li className="list">
                       Refine your interview skills with our mock interview
                       sessions.
                     </li>
                     <li className="list">
-                      Our feedback helps you regain confidence.
+                      Our feedback helps you regain confidence and excel in
+                      interviews.s
                     </li>
                   </li>
                 </ul>
@@ -139,10 +141,14 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Discovering your next job</h3>
-                <div className="card_txt">
-                  Finding your dream job can feel like a journey through the
-                  dark.  We hold the torch for you, with:
+                <div className="card_txt_wrapper">
+                  <div className="card_txt">
+                    Finding your dream job can feel like a journey through the
+                    dark.
+                  </div>
+                  <div className="card_txt">We hold the torch for you.</div>
                 </div>
+
                 <div
                   className="btn_wrapper
                 "
@@ -160,17 +166,21 @@ const Candidates = () => {
                     onClick={() => handleCrossClick(1)}
                   />
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Recruitment Consultation : </div>
+                    <div>Recruitment Consultation</div>
                     <li className="list">
-                      Explore current openings (hyperlink) from our corporate
+                      Explore current openings (link) from our corporate
                       clients.
                     </li>
                   </li>
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Job Booster Package :</div>
+                    <div>Job Booster Package</div>
                     <li className="list">
                       Leverage our expertise to improve your chances of landing
                       that 'dream job'.
+                    </li>
+                    <li className="list">
+                      We collaborate with you to create a customized action plan
+                      and then execute it.
                     </li>
                   </li>
                 </ul>
@@ -185,10 +195,13 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Navigating job offers</h3>
-                <div className="card_txt">
-                  Once you’ve received job offer(s), choosing the right one is
-                  crucial. We help you choose the one that celebrates you.
+                <div className="card_txt_wrapper">
+                  <div className="card_txt">
+                    Once you’ve received job offer(s), we help you choose the
+                    "right" one that celebrates you.
+                  </div>
                 </div>
+
                 <div
                   className="btn_wrapper
                 "
@@ -206,14 +219,14 @@ const Candidates = () => {
                     onClick={() => handleCrossClick(2)}
                   />
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Offer Evaluation & Comparison :</div>
+                    <div>Offer Evaluation & Comparison</div>
                     <li className="list">
-                      Indepth and side-by-side assessment of individual or
+                      In-depth and side-by-side assessment of individual or
                       multiple job offers.
                     </li>
                   </li>
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Negotiation Strategies :</div>
+                    <div>Negotiation Strategies</div>
                     <li className="list">
                       Let us help you identify suitable salary ranges for your
                       skills.
@@ -234,9 +247,14 @@ const Candidates = () => {
               </div>
               <div className="card_content">
                 <h3>Career Decision Points</h3>
-                <div className="card_txt">
-                  Are you at a career cross-road? Steer your career on the right
-                  path with our guidance on:
+
+                <div className="card_txt_wrapper">
+                  <div className="card_txt">
+                    Are you at a career cross-road?
+                  </div>
+                  <div className="card_txt">
+                    Steer your career on the right path with our guidance.
+                  </div>
                 </div>
                 <div
                   className="btn_wrapper
@@ -255,17 +273,18 @@ const Candidates = () => {
                     onClick={() => handleCrossClick(3)}
                   />
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Stay or Pivot :</div>
+                    <div>Stay or Pivot</div>
                     <li className="list">
                       We help you decide whether to remain in your current role
                       or venture into new roles.
                     </li>
                   </li>
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Exploring New Avenues :</div>
+                    <div>Exploring New Avenues</div>
                     <li className="list">
-                      We discuss upskilling in trending fields like AI/ML, Data
-                      Science or pursuing higher degrees- MBA, MS….
+                      We discuss the choice of upskilling in trending fields
+                      like AI/ML, Data Science or pursuing higher degrees- MBA,
+                      MS….
                     </li>
                   </li>
                 </ul>
@@ -279,12 +298,12 @@ const Candidates = () => {
                 <img src={temp5} alt="" />
               </div>
               <div className="card_content">
-                <h3>Crafting your Career Trajectory </h3>
-                <div className="card_txt">
-                  To break free from a conventional career path, you need to
-                  take a long-term view. We help you gain a deeper
-                  self-understanding to hand-craft a career where you can truly
-                  flourish.
+                <h3>Career Coaching </h3>
+                <div className="card_txt_wrapper">
+                  <div className="card_txt">
+                    We help you gain a deeper self-understanding to hand-craft a
+                    career where you can truly flourish.
+                  </div>
                 </div>
                 <div
                   className="btn_wrapper
@@ -303,11 +322,15 @@ const Candidates = () => {
                     onClick={() => handleCrossClick(4)}
                   />
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Finding your IKIGAI (link) :</div>
+                    <div>Finding your IKIGAI (link)</div>
                     <li className="list">Discover your purpose and passion.</li>
                   </li>
                   <li style={{ padding: "0 1rem" }}>
-                    <div>Designing your career journey :</div>
+                    <div>Designing your career journey</div>
+                    <li className="list">
+                      To break free from a conventional career path, you need to
+                      take a long-term view.
+                    </li>
                     <li className="list">
                       Collaborate with us to sketch out a career trajectory
                       spanning several decades.

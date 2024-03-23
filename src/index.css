@@ -4,12 +4,12 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: "Open Sans", sans-serif; */
-
+  overflow-x: hidden;
 }
-s
+
 :root {
-  --heading-font: "Tenor Sans", sans-serif;
-  --para-font: "Archivo Narrow", sans-serif;
+  --heading-font: "Philosopher", sans-serif;
+  --para-font: "Mulish", sans-serif;
 }
 
 
@@ -33,8 +33,13 @@ s
   font-family: var(--heading-font);
 }
 
+.logo_image {
+  height: 3rem;
+  width: 5rem;
+  object-fit: contain;
+}
+
 .nav_logo h1 {
-  margin-left: 1rem;
   font-size: 1.7rem;
   font-family: var(--heading-font);
 }
@@ -144,12 +149,6 @@ s
   /* border: 1.5rem solid #4D2A7C; */
 }
 
-.candidates_wrapper .header div .first_alpha,
-.testimonials_wrapper .header div .first_alpha {
-  font-size: 2rem;
-  color: #4D2A7C;
-}
-
 .candidates_wrapper .header div .career-pragati,
 .testimonials_wrapper .header div .career-pragati {
   font-size: 1.5rem;
@@ -220,11 +219,10 @@ s
 }
 
 .card_wrapper h3 {
-
   text-align: center;
   color: #4D2A7C;
   font-family: var(--heading-font);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.2;
   /* color: #333333; */
@@ -241,13 +239,13 @@ s
 .card_content div,
 ul li {
   font-family: var(--para-font);
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.2;
-  color: #333333;
+  color: black;
 }
 
-.card_txt {
+.card_txt_wrapper {
   height: 6rem;
 }
 
@@ -255,8 +253,7 @@ ul li {
   padding: 1rem;
 }
 
-.overLay li,
-.first-overLay li {
+.overLay li {
   color: white !important;
 }
 
@@ -266,60 +263,31 @@ ul li {
   overflow-y: hidden;
   position: absolute;
   top: 0;
+  text-align: left;
+  font-size: 1.2rem;
+  background-color: #4D2A7C;
+  bottom: 0;
+  left: 0;
+  list-style: none;
+  width: 100%;
+  height: 0;
+  border-radius: 2rem;
   padding: 2rem 1rem !important;
-  text-align: left;
-  font-size: 1.2rem;
-  background-color: #4D2A7C;
-  bottom: 0;
-  left: 0;
-  list-style: none;
-  width: 100%;
-  height: 0;
-  border-radius: 2rem;
-  /* transform: translateY(100%); */
-}
-
-.first-overLay {
-  opacity: 0;
-  transition: all .3s ease;
-  overflow-y: hidden;
-  position: absolute;
-  top: 0;
-  text-align: left;
-  font-size: 1.2rem;
-  background-color: #4D2A7C;
-  bottom: 0;
-  left: 0;
-  list-style: none;
-  width: 100%;
-  height: 0;
-  border-radius: 2rem;
-  padding: 0rem 0.5rem !important;
 }
 
 
 .overLay li {
   margin-bottom: 1rem;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: var(--para-font);
 }
 
-.first-overLay li {
-  margin-bottom: 1rem;
-  font-weight: 300;
-  font-size: 1.1rem;
-  font-family: var(--para-font);
-}
-
-.overLay div,
-.first-overLay div {
+.overLay div {
   margin: 1rem 0;
-  
 }
 
-/* .card_wrapper:hover .overLay,
-.card_wrapper:hover .first-overLay {
+/* .card_wrapper:hover .overLay{
   height: 100%;
   opacity: 1;
 } */
@@ -328,16 +296,10 @@ ul li {
   font-weight: 700;
   color: white;
   margin-bottom: 1rem !important;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--para-font);
 }
 
-.first-overLay li div {
-  font-weight: 700;
-  color: white;
-  margin-bottom: 1rem !important;
-  font-size: 1.1rem;
-}
 
 .list {
   list-style-type: disc;
@@ -366,10 +328,6 @@ ul li {
 
   .overLay {
     padding: 2rem 1rem !important;
-  }
-
-  .first-overLay {
-    padding: 0rem 0.5rem !important;
   }
 
   /* For Swriper arrow buttons */
@@ -635,11 +593,11 @@ ul li {
 .footer_wrapper {
   height: 5rem;
   width: 100%;
-  background-color: #4D2A7C;
+  /* background-color: #4D2A7C; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 28rem;
+  padding: 0 31rem;
 }
 
 .logos {
@@ -650,24 +608,56 @@ ul li {
 }
 
 .contact_us {
-  color: white;
+  color: #4D2A7C;
   font-weight: bold;
   font-size: 2rem;
   font-family: var(--heading-font);
 }
 
 
-@media (max-width : 1208px) {
+@media (max-width : 1260px) {
   .footer_wrapper {
     padding: 5rem 13rem;
   }
 
 }
 
-@media (max-width : 680px) {
+@media (max-width : 910px) {
   .footer_wrapper {
     padding: 5rem 10rem;
   }
+}
+
+/* -----------------------------Home---------------------------------------- */
+.home_wrapper {
+  margin: -2rem;
+  margin-bottom: 2rem;
+}
+
+.img_wrapper {
+  /* width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),  url(./images/rocket3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  object-fit: contain; */
+  height: 85vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/rocket3.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.img_wrapper h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: var(--heading-font);
+  text-transform: uppercase;
 }
 
 /* ----------------------------NavBar Media Query------------------------------ */
@@ -749,17 +739,14 @@ ul li {
   .candidates_wrapper .header div,
   .testimonials_wrapper .header div {
     padding: 1rem;
+    font-size: medium;
   }
 
   .candidates_wrapper .header div .career-pragati,
   .testimonials_wrapper .header div .career-pragati {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: medium;
     font-weight: bold;
-  }
-
-  .candidates_wrapper .header div .first_alpha,
-  .testimonials_wrapper .header div .first_alpha {
-    font-size: 2rem;
   }
 
   .footer_wrapper {

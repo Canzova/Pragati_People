@@ -9,7 +9,7 @@ import cust4 from "../images/pranita.png";
 import img1 from "../images/Vishal Rananawre2_TR.png";
 import img3 from "../images/Prakhar_TR.png";
 import img4 from "../images/Pranita-transformed_TR.png";
-import { CiUser } from "react-icons/ci";
+import img2 from "../images/WhatsApp Image 2024-03-23 at 7.46.31 PM.jpeg"
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -94,8 +94,7 @@ const Testimonials = () => {
               <div className="image-content">
                 <span className="overlay"></span>
                 <div className="card-image">
-                  {/* <img src={cust2} alt="" className="card-img" /> */}
-                  <CiUser className="card-img" />
+                  <img src={img2} alt="" className="card-img" />
                 </div>
               </div>
               <div className="card-content">

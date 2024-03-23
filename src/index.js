@@ -7,14 +7,16 @@ import Candidates from "./Components/Candidates";
 import Testimonials from "./Components/Testimonials";
 import CandidatesPhone from "./Components/CandidatesPhone";
 import Footer from "./Components/Footer";
+import Home from "./Components/Home"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <NavBar />
     <MobileNavBar />
-    <Candidates />
-    <Testimonials />
+    <Home/>
+    {/* <Candidates /> */}
+    {/* <Testimonials /> */}
     <Footer/>
   </React.StrictMode>
 );
