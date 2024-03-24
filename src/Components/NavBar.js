@@ -1,5 +1,8 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../images/Logo.jpg"
+import { Link } from "react-router-dom";
+
+
 const NavBar = () => {
   const handleOnclick = () => {
     //const hamburger = document.querySelector('.hamburger');
@@ -14,24 +17,24 @@ const NavBar = () => {
       </div>
       <div className="nav_links">
         <ul className="nav_links_list">
-          <a href="">
+          <Link to={"/"}>
             <li>Home</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to={"/about"}>
             <li>About</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to={"/testimonials"}>
             <li>Testimonials</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to={"/professionals"}>
             <li>Candidates</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to={"/companies"}>
             <li>Companies</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to={"/contact"}>
             <li className="btn_primary">Get In Touch</li>
-          </a>
+          </Link>
         </ul>
       </div>
 

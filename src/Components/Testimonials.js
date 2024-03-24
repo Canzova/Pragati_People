@@ -1,10 +1,6 @@
 // Icons
 import { FaLinkedinIn } from "react-icons/fa6";
-import { FaQuoteLeft } from "react-icons/fa";
-import cust1 from "../images/vishal_rananaware.png";
 import cust2 from "../images/harilyer.jpeg";
-import cust3 from "../images/prakhar.png";
-import cust4 from "../images/pranita.png";
 
 import img1 from "../images/Vishal Rananawre2_TR.png";
 import img3 from "../images/Prakhar_TR.png";
@@ -222,7 +218,7 @@ const Testimonials = () => {
                 <div className="user-details">
                   <div className="name_Lindekin">
                     <h2 className="name">
-                      PRANITA MADKAIKAR (nee Naina Mankikar)
+                      Pranita Madkaikar (nee Naina Mankikar)
                     </h2>
                     <a
                       href="https://www.linkedin.com/in/pranita-madkaikar-nee-naina-mankikar-00a87b15a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"

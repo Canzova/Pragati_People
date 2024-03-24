@@ -4,7 +4,6 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: "Open Sans", sans-serif; */
-  overflow-x: hidden;
 }
 
 :root {
@@ -16,14 +15,14 @@
 
 /* ----------------------------------NavBar----------------------------------------- */
 .Nav-Wrapper {
-  margin: 2rem 0;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 1rem;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
     -4px -4px 8px rgba(255, 255, 255, 0.5);
-
+  z-index: 10000000;
 }
 
 .nav_logo {
@@ -139,14 +138,12 @@
 /* -----------------------------------Candidates--------------------------------------- */
 .candidates_wrapper .header,
 .testimonials_wrapper .header {
-  /* background-color: #4D2A7C; */
   color: black;
-  /* height: 13rem; */
   text-align: center;
   padding: 1rem;
   box-shadow: #4D2A7C;
   margin: 0 2rem;
-  /* border: 1.5rem solid #4D2A7C; */
+  margin-top: 2rem;
 }
 
 .candidates_wrapper .header div .career-pragati,
@@ -476,8 +473,9 @@ ul li {
 }
 
 .cust-details {
+  font-family: var(--para-font);
   color: #4D2A7C;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 1rem;
   padding-bottom: 1rem;
 }
@@ -630,7 +628,6 @@ ul li {
 
 /* -----------------------------Home---------------------------------------- */
 .home_wrapper {
-  margin: -2rem;
   margin-bottom: 2rem;
 }
 
@@ -644,17 +641,21 @@ ul li {
   object-fit: contain; */
   height: 85vh;
   width: 100%;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/rocket3.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
+
 }
 
 .img_wrapper h1 {
   color: white;
   position: absolute;
   top: 50%;
-  left: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Better centering using translate */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: var(--heading-font);
   text-transform: uppercase;
@@ -668,7 +669,8 @@ ul li {
   } */
 
   .Nav-Wrapper {
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
 
   .cross-logo {
@@ -697,7 +699,8 @@ ul li {
 
 @media (max-width: 708px) {
   .Nav-Wrapper {
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
 
   .nav_links_list {
