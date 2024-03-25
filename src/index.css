@@ -95,6 +95,7 @@
 }
 
 .MobileNavBar_logo {
+  font-family: var(--heading-font);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -117,6 +118,7 @@
 }
 
 .MobileNavBar_links_list a li {
+  font-family: var(--para-font);
   margin: 1rem;
   list-style: none;
   color: #37423b;
@@ -646,7 +648,6 @@ ul li {
   background-size: cover;
   background-position: top center;
   position: relative;
-
 }
 
 .img_wrapper h1 {
@@ -661,12 +662,49 @@ ul li {
   text-transform: uppercase;
 }
 
+.our_services {
+  padding: 2rem 17rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.who {
+  height: 15rem;
+  width: 15rem;
+}
+
+.who h1,
+.what h1 {
+  color: #4D2A7C;
+  font-family: var(--heading-font);
+}
+
+.who img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.what {
+  height: 15rem;
+  width: 15rem;
+
+}
+
+.what img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 /* ----------------------------NavBar Media Query------------------------------ */
 
 @media (max-width:1025px) {
   /* .Nav-Wrapper {
     box-shadow: none;
   } */
+
 
   .Nav-Wrapper {
     margin-top: 1rem;
@@ -698,6 +736,15 @@ ul li {
 }
 
 @media (max-width: 708px) {
+
+  .img_wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../src/images/rocket3Mobile.jpg");
+    background-position: 44% 50%;
+    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .Nav-Wrapper {
     margin-top: 1rem;
     margin-bottom: 0;
