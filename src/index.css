@@ -139,7 +139,9 @@
 
 /* -----------------------------------Candidates--------------------------------------- */
 .candidates_wrapper .header,
-.testimonials_wrapper .header {
+.testimonials_wrapper .header,
+.services_wrapper .header,
+.about_wrapper .header {
   color: black;
   text-align: center;
   padding: 1rem;
@@ -149,11 +151,17 @@
 }
 
 .candidates_wrapper .header div .career-pragati,
-.testimonials_wrapper .header div .career-pragati {
+.testimonials_wrapper .header div .career-pragati,
+.about_wrapper .header div .career-pragati {
   font-size: 1.5rem;
   font-weight: bold;
   color: #4D2A7C;
   font-family: var(--para-font);
+}
+
+.first_alpha {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .testimonials_wrapper .header .joy {
@@ -166,7 +174,9 @@
 }
 
 .candidates_wrapper .header h1,
-.testimonials_wrapper .header h1 {
+.testimonials_wrapper .header h1,
+.services_wrapper .header h1,
+.about_wrapper .header h1 {
   color: white;
   margin-bottom: 1rem;
   background: #4D2A7C;
@@ -176,7 +186,9 @@
 }
 
 .candidates_wrapper .header div,
-.testimonials_wrapper .header div {
+.testimonials_wrapper .header div,
+.services_wrapper .header div,
+.about_wrapper .header div {
   font-family: var(--para-font);
   font-size: 1.4rem;
   padding-bottom: 1rem;
@@ -659,10 +671,11 @@ ul li {
 }
 
 .progress {
-  left: 65% !important;
+  left: 64% !important;
 }
 
-.our_services {
+.our_services,
+.home_services {
   margin: 5rem;
   display: flex;
   align-items: center;
@@ -678,6 +691,7 @@ ul li {
   cursor: pointer;
   overflow: hidden;
   border-radius: 1rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .who img {
@@ -695,6 +709,7 @@ ul li {
   cursor: pointer;
   overflow: hidden;
   border-radius: 1rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .what img {
@@ -827,7 +842,9 @@ ul li {
   }
 
   .candidates_wrapper .header div,
-  .testimonials_wrapper .header div {
+  .testimonials_wrapper .header div,
+  .services_wrapper .header div,
+  .about_wrapper .header div {
     padding: 1rem;
     font-size: medium;
   }
@@ -841,6 +858,33 @@ ul li {
 
   .footer_wrapper {
     padding: 5rem 1rem;
+  }
+
+  .propelling {
+    font-size: 1.3rem;
+    left: 20% !important;
+    top: 40% !important;
+  }
+
+  .progress {
+    font-size: 1.3rem;
+    left: 80% !important;
+    top: 40% !important;
+  }
+
+  .our_services {
+    flex-direction: column;
+    margin: 5rem 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .home_services {
+    margin-top: 5rem;
+  }
+
+  .upper_layer h1 {
+    font-size: 1.3rem
   }
 
 }

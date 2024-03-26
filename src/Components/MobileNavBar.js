@@ -17,13 +17,13 @@ const MobileNavBar = () => {
           <li onClick={handleOnclick}>Home</li>
         </Link>
         <Link to={"/about"}>
-          <li>About</li>
+          <li onClick={handleOnclick}>About</li>
         </Link>
         <Link to={"/testimonials"}>
           <li onClick={handleOnclick}>Testimonials</li>
         </Link>
         <Link to={"/professionals"}>
-          <li onClick={handleOnclick}>Candidates</li>
+          <li onClick={handleOnclick}>Professionals</li>
         </Link>
         <Link to={"/companies"}>
           <li onClick={handleOnclick}>Companies</li>

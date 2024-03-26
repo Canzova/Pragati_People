@@ -27,7 +27,7 @@ const NavBar = () => {
             <li>Testimonials</li>
           </Link>
           <Link to={"/professionals"}>
-            <li>Candidates</li>
+            <li>Professionals</li>
           </Link>
           <Link to={"/companies"}>
             <li>Companies</li>

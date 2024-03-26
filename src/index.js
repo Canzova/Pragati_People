@@ -10,6 +10,8 @@ import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import OurServices from "./Components/OurServices";
+import AboutUs from "./Components/AboutUs";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -40,6 +42,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/testimonials",
         element: <Testimonials />,
+      },
+      {
+        path: "/ourservices",
+        element: <OurServices />,
+      },
+      {
+        path: "/about",
+        element: <AboutUs />,
       },
     ],
   },
