@@ -5,7 +5,7 @@ import cust2 from "../images/harilyer.jpeg";
 import img1 from "../images/Vishal Rananawre2_TR.png";
 import img3 from "../images/Prakhar_TR.png";
 import img4 from "../images/Pranita-transformed_TR.png";
-import img2 from "../images/WhatsApp Image 2024-03-23 at 7.46.31 PM.jpeg"
+import img2 from "../images/WhatsApp Image 2024-03-23 at 7.46.31 PM.jpeg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,13 +26,13 @@ const Testimonials = () => {
       <div className="header">
         <h1>Testimonials</h1>
         <div>
+          <div className="main_heading">
+            Discover what our customers say about their experiences with us.
+          </div>
           <span className="first_alpha">A</span>t Pragati People, we have many
           metrics to track our performance, but our ultimate measure of success
           is the <span className="joy">JOY</span> we bring to our customers.
         </div>
-        <div>
-            Discover what our customers say about their experiences with us.
-          </div>
       </div>
       <div className="testimonials_slider_wrapper">
         <Swiper

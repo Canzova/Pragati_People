@@ -12,6 +12,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import OurServices from "./Components/OurServices";
 import AboutUs from "./Components/AboutUs";
+import Organization from "./Components/Organization";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -46,6 +47,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/ourservices",
         element: <OurServices />,
+      },
+      {
+        path: "/organizations",
+        element: <Organization />,
       },
       {
         path: "/about",

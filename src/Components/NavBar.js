@@ -1,7 +1,6 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import logo from "../images/Logo.jpg"
+import logo from "../images/Logo.jpg";
 import { Link } from "react-router-dom";
-
 
 const NavBar = () => {
   const handleOnclick = () => {
@@ -20,17 +19,14 @@ const NavBar = () => {
           <Link to={"/"}>
             <li>Home</li>
           </Link>
+          <Link to={"/ourservices"}>
+            <li>Services</li>
+          </Link>
           <Link to={"/about"}>
-            <li>About</li>
+            <li>About Us</li>
           </Link>
-          <Link to={"/testimonials"}>
-            <li>Testimonials</li>
-          </Link>
-          <Link to={"/professionals"}>
-            <li>Professionals</li>
-          </Link>
-          <Link to={"/companies"}>
-            <li>Companies</li>
+          <Link to={"/"}>
+            <li>Current Openings</li>
           </Link>
           <Link to={"/contact"}>
             <li className="btn_primary">Get In Touch</li>

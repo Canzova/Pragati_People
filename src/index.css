@@ -9,6 +9,7 @@
 :root {
   --heading-font: "Philosopher", sans-serif;
   --para-font: "Mulish", sans-serif;
+  --highliter-font: "Tenor Sans", sans-serif;
 }
 
 
@@ -152,7 +153,7 @@
 
 .candidates_wrapper .header div .career-pragati,
 .testimonials_wrapper .header div .career-pragati,
-.about_wrapper .header div .career-pragati {
+.about_wrapper .header div .career-pragati{
   font-size: 1.5rem;
   font-weight: bold;
   color: #4D2A7C;
@@ -684,9 +685,13 @@ ul li {
   margin-bottom: 5rem;
 }
 
+.home_services{
+  margin: 2rem 5rem;
+}
+
 .who {
-  height: 30rem;
-  width: 100%;
+  height: 20rem;
+  width: 25rem;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -703,8 +708,8 @@ ul li {
 }
 
 .what {
-  height: 30rem;
-  width: 100%;
+  height: 20rem;
+  width: 25rem;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -719,6 +724,17 @@ ul li {
   border-radius: 1rem;
   transition: all .5s ease-in-out;
 }
+
+/* It has to be bg or bg-color not color */
+/* .what::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4D2A7C; 
+} */
 
 .upper_layer {
   position: absolute;
@@ -737,6 +753,7 @@ ul li {
   transform: translateX(-50%);
   font-family: var(--para-font);
   transition: all .3s ease-in-out;
+  font-size: 1.8rem;
 }
 
 .who:hover img,
@@ -744,13 +761,34 @@ ul li {
   transform: scale(1.04);
 }
 
-/* .who:hover .upper_layer, .what:hover .upper_layer{
-  z-index: 20;
-} */
+.main_heading {
+  font-family: var(--highliter-font) !important;
+  color: #4D2A7C;
+  font-weight: bold;
+}
 
-/* .who:hover::after, .what:hover::after{
-  opacity: 1;
-} */
+.home_wrapper .home_data .career-pragati{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4D2A7C;
+  font-family: var(--heading-font);
+}
+
+.home_data {
+  font-family: var(--para-font);
+  padding: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.home_data div{
+  margin-bottom: 1rem;
+}
+
 
 
 /* ----------------------------NavBar Media Query------------------------------ */
@@ -834,7 +872,9 @@ ul li {
   }
 
   .candidates_wrapper .header h1,
-  .testimonials_wrapper .header h1 {
+  .testimonials_wrapper .header h1,
+  .about_wrapper .header h1,
+  .services_wrapper .header h1 {
     color: white;
     background-color: #4D2A7C;
     height: 4rem;
@@ -884,7 +924,12 @@ ul li {
   }
 
   .upper_layer h1 {
-    font-size: 1.3rem
+    font-size: 1.5rem
+  }
+
+  .who,
+  .what {
+    width: 20rem;
   }
 
 }
