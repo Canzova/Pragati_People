@@ -142,6 +142,7 @@
 .candidates_wrapper .header,
 .testimonials_wrapper .header,
 .services_wrapper .header,
+.contact_wrapper .header,
 .about_wrapper .header {
   color: black;
   text-align: center;
@@ -153,7 +154,7 @@
 
 .candidates_wrapper .header div .career-pragati,
 .testimonials_wrapper .header div .career-pragati,
-.about_wrapper .header div .career-pragati{
+.about_wrapper .header div .career-pragati {
   font-size: 1.5rem;
   font-weight: bold;
   color: #4D2A7C;
@@ -177,6 +178,7 @@
 .candidates_wrapper .header h1,
 .testimonials_wrapper .header h1,
 .services_wrapper .header h1,
+.contact_wrapper .header h1,
 .about_wrapper .header h1 {
   color: white;
   margin-bottom: 1rem;
@@ -189,7 +191,8 @@
 .candidates_wrapper .header div,
 .testimonials_wrapper .header div,
 .services_wrapper .header div,
-.about_wrapper .header div {
+.about_wrapper .header div,
+.contact_wrapper .header div {
   font-family: var(--para-font);
   font-size: 1.4rem;
   padding-bottom: 1rem;
@@ -642,9 +645,9 @@ ul li {
 }
 
 /* -----------------------------Home---------------------------------------- */
-.home_wrapper {
+/* .home_wrapper {
   margin-bottom: 2rem;
-}
+} */
 
 .img_wrapper {
   height: 85vh;
@@ -681,11 +684,11 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 5rem;
+  gap: 0rem;
   margin-bottom: 5rem;
 }
 
-.home_services{
+.home_services {
   margin: 2rem 5rem;
 }
 
@@ -767,7 +770,7 @@ ul li {
   font-weight: bold;
 }
 
-.home_wrapper .home_data .career-pragati{
+.home_wrapper .home_data .career-pragati {
   font-size: 2rem;
   font-weight: bold;
   color: #4D2A7C;
@@ -776,8 +779,8 @@ ul li {
 
 .home_data {
   font-family: var(--para-font);
-  padding: 3rem;
-  padding-bottom: 1rem;
+  padding: 1rem 3rem;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -785,7 +788,7 @@ ul li {
   font-size: 1.5rem;
 }
 
-.home_data div{
+.home_data div {
   margin-bottom: 1rem;
 }
 
@@ -798,6 +801,19 @@ ul li {
     box-shadow: none;
   } */
 
+  .home_data {
+    text-align: center;
+    font-size: 1rem;
+    font-size: 1rem;
+  }
+
+  .home_wrapper .home_data .career-pragati {
+    font-size: 1.5rem;
+  }
+
+  .home_services {
+    gap: 2rem;
+  }
 
   .Nav-Wrapper {
     margin-top: 1rem;
@@ -862,7 +878,10 @@ ul li {
   }
 
   .candidates_wrapper .header,
-  .testimonials_wrapper .header {
+  .testimonials_wrapper .header,
+  .services_wrapper .header,
+  .about_wrapper .header,
+  .contact_wrapper .header {
     background: none;
     color: black;
     padding: 0;
@@ -874,19 +893,23 @@ ul li {
   .candidates_wrapper .header h1,
   .testimonials_wrapper .header h1,
   .about_wrapper .header h1,
-  .services_wrapper .header h1 {
+  .services_wrapper .header h1,
+  .contact_wrapper .header h1 {
     color: white;
     background-color: #4D2A7C;
     height: 4rem;
     padding: 1rem 0;
+    margin-bottom: 0;
   }
 
   .candidates_wrapper .header div,
   .testimonials_wrapper .header div,
   .services_wrapper .header div,
-  .about_wrapper .header div {
+  .about_wrapper .header div,
+  .contact_wrapper .header div {
     padding: 1rem;
     font-size: medium;
+    padding-bottom: 0;
   }
 
   .candidates_wrapper .header div .career-pragati,
@@ -897,7 +920,7 @@ ul li {
   }
 
   .footer_wrapper {
-    padding: 5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .propelling {
@@ -919,9 +942,9 @@ ul li {
     margin-top: 1rem;
   }
 
-  .home_services {
+  /* .home_services {
     margin-top: 5rem;
-  }
+  } */
 
   .upper_layer h1 {
     font-size: 1.5rem
@@ -930,6 +953,19 @@ ul li {
   .who,
   .what {
     width: 20rem;
+    margin-bottom: 1.5rem;
   }
 
+  .home_data {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .home_wrapper .home_data .career-pragati {
+    font-size: 1.5rem;
+  }
+
+  .phone_styling {
+    font-size: 1rem !important;
+  }
 }

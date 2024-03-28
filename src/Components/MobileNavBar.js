@@ -22,12 +22,8 @@ const MobileNavBar = () => {
         <Link to={"/about"}>
           <li onClick={handleOnclick}>About</li>
         </Link>
-        
         <Link to={"/"}>
           <li onClick={handleOnclick}>Current Openings</li>
-        </Link>
-        <Link to={"/companies"}>
-          <li onClick={handleOnclick}>Companies</li>
         </Link>
         <Link to={"/contact"}>
           <li className="btn_primary" onClick={handleOnclick}>

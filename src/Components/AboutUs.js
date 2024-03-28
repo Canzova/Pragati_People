@@ -16,9 +16,11 @@ const AboutUs = () => {
           <span className="first_alpha">W</span>e are bridge builders.
         </div>
         <div>
-          Following the philosophy of <span className="career-pragati">yin-yang</span>,  we unite organizations and
-          people together on a path towards shared progress.
+          Following the philosophy of{" "}
+          <span className="career-pragati">yin-yang</span>,  we unite
+          organizations and people together on a path towards shared progress.
         </div>
+        <div>We continue on a journey to make more customers happy.</div>
       </div>
       <div className="our_services" onClick={scrollToTop}>
         <div className="who">

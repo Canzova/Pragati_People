@@ -13,6 +13,7 @@ import { Outlet } from "react-router-dom";
 import OurServices from "./Components/OurServices";
 import AboutUs from "./Components/AboutUs";
 import Organization from "./Components/Organization";
+import ContactUs from "./Components/ContactUs";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -55,6 +56,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <AboutUs />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
       },
     ],
   },

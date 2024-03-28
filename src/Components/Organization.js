@@ -14,14 +14,10 @@ const Organization = () => {
       <div className="header">
         <h1>Organizations</h1>
         <div className="main_heading">
-          <span className="first_alpha">W</span>e help organizations in building and nurturing their teams.
-
+          <span className="first_alpha">S</span>marter people = Faster progress
         </div>
-        {/* <div>
-          Following the philosophy of{" "}
-          <span className="career-pragati">yin-yang</span>,  we unite
-          organizations and people together on a path towards shared progress.
-        </div> */}
+        <div>We help organizations in building and nurturing their teams.</div>
+        <div>Finding top talent is HARD Training them is 10X harder!</div>
       </div>
       <div className="our_services" onClick={scrollToTop}>
         <div className="who">

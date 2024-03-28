@@ -45,6 +45,9 @@ const Candidates = () => {
       <div className="header">
         <h1>Professionals</h1>
         <div className="main_heading">
+          <span className="first_alpha">E</span>veryone’s got a dream career.
+        </div>
+        <div>
           <span className="first_alpha">Y</span>our drive, aspirations,
           expertise and talents make your career journey truly unique.
         </div>

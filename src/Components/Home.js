@@ -1,6 +1,5 @@
-import home1 from "../images/home-1.jpg";
-import home2 from "../images/home-2.jpg";
-import temp from "../images/rocket2.jpg";
+import home1 from "../images/HomeFixed1.jpg";
+import home2 from "../images/HomeFixed2.jpg";
 import { Link } from "react-router-dom";
 const Home = () => {
   const scrollToTop = () => {
@@ -17,9 +16,8 @@ const Home = () => {
       </div>
       <div className="home_data">
         <div className="career-pragati">
-          A company built with a single point agenda.
+          A company built with a single point agenda - “Progress”
         </div>
-        <div className="career-pragati">“Progress”</div>
         <div>
           Progress is a seemingly simple, yet profound concept- it means
           different things to different people.
@@ -40,7 +38,7 @@ const Home = () => {
         </div>
         <div className="what" onClick={scrollToTop}>
           <Link to={"/ourservices"}>
-            <img src={temp} alt="" />
+            <img src={home2} alt="" />
             <div className="upper_layer">
               <h1>What we do ?</h1>
             </div>
@@ -50,12 +48,26 @@ const Home = () => {
 
       <div className="home_data">
         <div>
-          If you’ve got a <span className="career-pragati">north star</span>, we
-          bring the <span className="career-pragati">flight plan</span>.
+          If you’ve got a{" "}
+          <span className="career-pragati phone_styling">
+            north star
+          </span>
+          , we bring the{" "}
+          <span className="career-pragati phone_styling">
+            flight plan
+          </span>
+          .
         </div>
         <div>
-          If you’ve got a <span className="career-pragati">flight plan</span>,
-          we bring <span className="career-pragati">the fuel</span>.
+          If you’ve got a{" "}
+          <span className="career-pragati phone_styling">
+            flight plan
+          </span>
+          , we bring{" "}
+          <span className="career-pragati phone_styling">
+            the fuel
+          </span>
+          .
         </div>
       </div>
     </div>
